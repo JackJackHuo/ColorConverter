@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./ColorConveqrter_Slider.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="converter">
+    <div class="container">
+      <section class="item" id="rgb">
+        <span>RGB</span>
+        <div id="rgbInputs">
+          <div class="rgbInput" id="r">
+            <span>R</span>
+            <input type="range" min="0" max="255" value="90" step="1" list="rList" name="r" id="rInput">
+            <datalist id="rList">
+              <option value="255" label="255">
+              <option value="0" label="0">
+            </datalist>
+            <div class="rgbColor" id="rColor"></div>
+          </div>
+          <div class="rgbInput" id="g">
+            <span>G</span>
+            <input type="range" min="0" max="255" value="90" step="1" list="gList" name="g" id="gInput">
+            <datalist id="gList">
+              <option value="255" label="255">
+              <option value="0" label="0">
+            </datalist>
+            <div class="rgbColor" id="gColor"></div>
+          </div>
+          <div class="rgbInput" id="b">
+            <span>B</span>
+            <input type="range" min="0" max="255" value="90" step="1" list="bList" name="b" id="bInput">
+            <datalist id="bList">
+              <option value="255" label="255">
+              <option value="0" label="0">
+            </datalist>
+            <div class="rgbColor" id="bColor"></div>
+          </div>
+        </div>
+      </section>
+      <section class="item" id="hex">
+        <span>HEX</span>
+        <input type="text" id="hexInput">
+        <div id="hexColor"></div>
+      </section>
+    </div>
+  </div>
+  
+  <script src="./ColorConveqrter_Slider.js"></script>
+</body>
+</html>
