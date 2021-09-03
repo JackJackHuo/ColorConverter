@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./ColorConverter.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="converter">
+    <div class="container">
+      <section class="item" id="rgb">
+        <span>RGB</span>
+        <div id="rgbInputs">
+          <div class="rgbInput" id="r">
+            <span>R</span>
+            <input type="text" id="rInput">
+            <div class="rgbColor" id="rColor"></div>
+          </div>
+          <div class="rgbInput" id="g">
+            <span>G</span>
+            <input type="text" id="gInput">
+            <div class="rgbColor" id="gColor"></div>
+          </div>
+          <div class="rgbInput" id="b">
+            <span>B</span>
+            <input type="text" id="bInput">
+            <div class="rgbColor" id="bColor"></div>
+          </div>
+        </div>
+      </section>
+      <section class="item" id="hex">
+        <span>HEX</span>
+        <input type="text" id="hexInput">
+        <div id="hexColor"></div>
+      </section>
+    </div>
+    <footer>
+      <button id="btn">Converter</button>
+    </footer>
+  </div>
+  
+  <script src="./ColorConverter.js"></script>
+</body>
+</html>
