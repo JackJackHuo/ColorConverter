@@ -48,8 +48,8 @@ converter.addEventListener("click" , convertClicked = (event) => {
 
     hexInput.value = `#${convert2Hex()}`
     rColor.setAttribute('style', `background-color:rgb(${R.value} , 0 , 0)`)
-    gColor.setAttribute('style', `background-color:rgb(${G.value} , 0 , 0)`)
-    bColor.setAttribute('style', `background-color:rgb(${B.value} , 0 , 0)`)
+    gColor.setAttribute('style', `background-color:rgb(0 , ${G.value} , 0)`)
+    bColor.setAttribute('style', `background-color:rgb(0 , 0 , ${B.value})`)
     hexColor.setAttribute('style', `background-color:#${convert2Hex()}`)
   }
 })
