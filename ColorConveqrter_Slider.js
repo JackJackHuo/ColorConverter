@@ -32,20 +32,7 @@ String.prototype.unshift = function(string){
   arr.unshift(string)
   return arr.join('')
 }
-converter.addEventListener('click', convertClicked = event => {
-  console.log(event.target.value)
-  const inputs = [...rgbInputs]
-  if (inputs.some(input => isNaN(+input.value)
-  )) {
-    rgbInputs.forEach(input => input.value = '')
-    return alert('please type number')
-  }
-  if (inputs.some(input => +input.value > 255 || input.value === ''
-  )) {
-    rgbInputs.forEach(input => input.value = '')
-    return alert('please type number 0 ~ 255')
-  }
-
+converter.addEventListener('input', convertClicked = event => {
   hexInput.value = `#${convert2Hex()}`
   rColor.setAttribute('style', `background-color:rgb(${R.value} , 0 , 0)`)
   rColor.textContent = R.value
@@ -56,3 +43,4 @@ converter.addEventListener('click', convertClicked = event => {
   converter.setAttribute('style', `background-color:#${convert2Hex()}`)
 })
 
+converter.setAttribute('style', `background-color:#${convert2Hex()}`)

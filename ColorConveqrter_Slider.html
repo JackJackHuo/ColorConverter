@@ -11,11 +11,11 @@
   <div class="converter">
     <div class="container">
       <section class="item" id="rgb">
-        <span>RGB</span>
+        <span class="title">RGB</span>
         <div id="rgbInputs">
           <div class="rgbInput" id="r">
-            <span>R</span>
-            <input type="range" min="0" max="255" value="90" step="1" list="rList" name="r" id="rInput">
+            <div class="colorTag" id="rTag">R</div>
+            <input type="range" min="0" max="255" value="90" list="rList" name="r" id="rInput">
             <datalist id="rList">
               <option value="255" label="255">
               <option value="0" label="0">
@@ -23,8 +23,8 @@
             <div class="rgbColor" id="rColor"></div>
           </div>
           <div class="rgbInput" id="g">
-            <span>G</span>
-            <input type="range" min="0" max="255" value="90" step="1" list="gList" name="g" id="gInput">
+            <div class="colorTag" id="gTag">G</div>
+            <input type="range" min="0" max="255" value="90" list="gList" name="g" id="gInput">
             <datalist id="gList">
               <option value="255" label="255">
               <option value="0" label="0">
@@ -32,8 +32,8 @@
             <div class="rgbColor" id="gColor"></div>
           </div>
           <div class="rgbInput" id="b">
-            <span>B</span>
-            <input type="range" min="0" max="255" value="90" step="1" list="bList" name="b" id="bInput">
+            <div class="colorTag" id="bTag">B</div>
+            <input type="range" min="0" max="255" value="90" list="bList" name="b" id="bInput">
             <datalist id="bList">
               <option value="255" label="255">
               <option value="0" label="0">
@@ -43,7 +43,7 @@
         </div>
       </section>
       <section class="item" id="hex">
-        <span>HEX</span>
+        <span class="title">HEX</span>
         <input type="text" id="hexInput">
         <div id="hexColor"></div>
       </section>
